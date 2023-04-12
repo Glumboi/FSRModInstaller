@@ -1,0 +1,37 @@
+﻿<ui:UiWindow x:Class="FSRModInstaller.MainWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+             xmlns:local="clr-namespace:FSRModInstaller"
+             xmlns:properties="clr-namespace:FSRModInstaller.Properties"
+             mc:Ignorable="d"
+             Title="MainWindow"
+             Height="423"
+             Width="800"
+             MinHeight="423"
+             MaxHeight="423"
+             ExtendsContentIntoTitleBar="True"
+             WindowBackdropType="Mica"
+             WindowCornerPreference="Round"
+             WindowStartupLocation="CenterScreen"
+             Background="#2d2d2d">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <ui:TitleBar x:Name="TitleBar"
+                     Title="FSRModInstaller"
+                     UseSnapLayout="True"
+                     Icon="./Assets/Icon.ico" />
+
+        <Border Padding="10"
+                Grid.Row="1">
+            <Frame Source="./Pages/MainPage.xaml" />
+        </Border>
+    </Grid>
+</ui:UiWindow>
