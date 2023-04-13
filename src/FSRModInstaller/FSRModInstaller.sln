@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FSRModInstaller", "FSRModIn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FSRModInstaller.Xml", "..\FSRModInstaller.Xml\FSRModInstaller.Xml.csproj", "{8CCF8215-E36E-4570-B9D8-A0B334164540}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FSRModInstaller.FsrFiles", "..\FSRModInstaller.FsrFiles\FSRModInstaller.FsrFiles.csproj", "{7795A1E3-1C36-4427-B02D-709E5A73FA2B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{8CCF8215-E36E-4570-B9D8-A0B334164540}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CCF8215-E36E-4570-B9D8-A0B334164540}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CCF8215-E36E-4570-B9D8-A0B334164540}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7795A1E3-1C36-4427-B02D-709E5A73FA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7795A1E3-1C36-4427-B02D-709E5A73FA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7795A1E3-1C36-4427-B02D-709E5A73FA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7795A1E3-1C36-4427-B02D-709E5A73FA2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

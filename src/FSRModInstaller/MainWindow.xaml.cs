@@ -25,4 +25,9 @@ public partial class MainWindow : UiWindow
     {
         InitializeComponent();
     }
+
+    private void UiWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+    {
+        Properties.Settings.Default.Save();
+    }
 }

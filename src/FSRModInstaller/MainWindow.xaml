@@ -16,7 +16,8 @@
              WindowBackdropType="Mica"
              WindowCornerPreference="Round"
              WindowStartupLocation="CenterScreen"
-             Background="#2d2d2d">
+             Background="#2d2d2d"
+             Closing="UiWindow_Closing">
 
     <Grid>
         <Grid.RowDefinitions>

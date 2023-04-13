@@ -67,7 +67,7 @@ internal class MainPageViewModel : ViewModelBase
         }
     }
 
-    private string _gamePath;
+    private string _gamePath = Properties.Settings.Default.LastPath;
 
     public string GamePath
     {
@@ -76,12 +76,13 @@ internal class MainPageViewModel : ViewModelBase
         {
             if (value != _gamePath)
             {
+                Properties.Settings.Default.LastPath = value;
                 SetProperty(ref _gamePath, value);
             }
         }
     }
 
-    private int _selectedConfigIndex;
+    private int _selectedConfigIndex = Properties.Settings.Default.LastConfigIndex;
 
     public int SelectedConfigIndex
     {
@@ -90,12 +91,13 @@ internal class MainPageViewModel : ViewModelBase
         {
             if (value != _selectedConfigIndex)
             {
+                Properties.Settings.Default.LastConfigIndex = value;
                 SetProperty(ref _selectedConfigIndex, value);
             }
         }
     }
 
-    private int _selectedFsrIndex;
+    private int _selectedFsrIndex = Properties.Settings.Default.LastFsrIndex;
 
     public int SelectedFsrIndex
     {
@@ -104,6 +106,7 @@ internal class MainPageViewModel : ViewModelBase
         {
             if (value != _selectedFsrIndex)
             {
+                Properties.Settings.Default.LastFsrIndex = value;
                 SetProperty(ref _selectedFsrIndex, value);
             }
         }
@@ -121,6 +124,7 @@ internal class MainPageViewModel : ViewModelBase
     private void GetFsrVersions()
     {
         FsrFiles.FsrVersions.GetAllFsrVersions(); //Get all versions
+
         //Assign versions to vm
         FsrVersionsPath = FsrFiles.FsrVersions.FsrVersionsPath;
         FsrVersions = FsrFiles.FsrVersions.FsrVersionsName;

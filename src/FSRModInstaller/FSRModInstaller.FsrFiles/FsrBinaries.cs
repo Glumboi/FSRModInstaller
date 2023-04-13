@@ -1,4 +1,7 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Reflection;
 
 namespace FSRModInstaller.FsrFiles;
@@ -22,6 +25,8 @@ public class FsrBinaries
 
     public static void InstallFsr(int versionIndex, string dest)
     {
+        if (!Directory.Exists(dest)) Directory.CreateDirectory(dest);
+
         foreach (string file in Directory.GetFiles(FsrPaths[versionIndex]))
         {
             var test = dest + "\\" + Path.GetFileName(file);
